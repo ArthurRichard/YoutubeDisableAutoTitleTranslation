@@ -1,0 +1,26 @@
+{
+"manifest_version": 2,
+    "name": "Youtube Disable Automatic Title Translation",
+    "description": "Allows you to display the original video title on youtube, and not some lousy automatic translation.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ],
+    "icons": {
+        "16": "images/ydatt16.png",
+        "32": "images/ydatt32.png",
+        "48": "images/ydatt48.png",
+        "128": "images/ydatt128.png"
+      }
+}
